@@ -18,3 +18,13 @@ but Feel free to adapt it based on your programming language of choice.
 
 ```
 - Comments are provided for better understanding!
+
+### 3.Cumulative String Length Calculator
+- This Java program allows the user to input a specified number of strings and calculates the combined length of all the strings. The user is prompted to enter each string individually, and the program outputs the total length of all the provided strings.
+
+```bash
+The code is provided in "totalLength.java" file, The solution is in Java,
+but Feel free to adapt it based on your programming language of choice.
+
+```
+- As always comments are provided!
