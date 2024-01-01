@@ -9,3 +9,12 @@ The code is provide in "spiralMatrix.java" file, The solution is written is java
 ----Comments are provided to make your life a little easier!----
 ```
 
+### 2. Transpose of A 2D Array(Matrix)
+- In this question, You will learn to how find and print the Transpose of a 2D matrix.
+
+```bash
+The code is provided in "transpose.java" file, The solution is in Java,
+but Feel free to adapt it based on your programming language of choice.
+
+```
+- Comments are provided for better understanding!
