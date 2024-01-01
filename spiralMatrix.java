@@ -3,6 +3,9 @@ import java.util.*;
 public class spiralMatrix{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        
+        // User input
+
         System.out.print("Enter The Rows of array: ");
         int rowsOfArray = scanner.nextInt();
         System.out.print("Enter The columns of array: ");
@@ -19,18 +22,42 @@ public class spiralMatrix{
         int columnStart = 0;
         int columnEnd = colsOfArray-1;
 
+        // Itrate using while loop until the condition is meet!
 
-        //while (rowStart<=rowEnd && columnStart<=columnEnd) {
+        while (rowStart<=rowEnd && columnStart<=columnEnd) {
+
+            //Traverse in the row till rowEnd and we will increase the rowStart by 1;
 
             for(int j = columnStart; j<=columnEnd; j++){
                 System.out.print(spiralArray[rowStart][j] + " ");
             }
-            rowStart++;
-            for(int i = rowStart; i<=rowEnd; i++){
-                System.out.println(spiralArray[i][columnStart]);
-            }
+            rowStart++; 
             
-       // }
+            //Traverse in the column till colEnd and will decrease the colend by 1;
+
+            for(int i = rowStart; i<=rowEnd; i++){
+                System.out.print(spiralArray[i][columnEnd] + " ");
+            }
+            columnEnd--;
+
+            //Traverse in the row till rowstart and will decrease the rowEnd by 1;
+
+            for(int j = columnEnd; j>=columnStart; j--){
+                System.out.print(spiralArray[rowEnd][j] + " ");
+            }
+            rowEnd--;
+
+            //Traverse in the column till columnStart and will increase the columnStart by 1;
+
+            for(int i = rowEnd; i>=rowStart; i--){
+                System.out.print(spiralArray[i][columnStart] + " ");
+            }
+            columnStart++;
+
+            
+
+
+       }
 
     }
 }
