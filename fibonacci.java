@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class fibonacci {
 
@@ -8,11 +8,13 @@ public class fibonacci {
         int endPoint = scanner.nextInt();
         int firstNumber = 0;
         int secondNumber = 1;
-        for(int i = 0; i < endPoint; i+=firstNumber){
+        
+        System.out.print(firstNumber + " " + secondNumber + " ");  // Print the initial two numbers
+        while (secondNumber + firstNumber <= endPoint && endPoint>1) {
             int next = firstNumber + secondNumber;
+            System.out.print(next + " ");
             firstNumber = secondNumber;
             secondNumber = next;
-            System.out.print(next + " ");
         }
     }
 }
